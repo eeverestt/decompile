@@ -1,0 +1,14 @@
+/home/everest/RiderProjects/decompiler/decompiler/bin/Debug/net10.0/decompiler
+/home/everest/RiderProjects/decompiler/decompiler/bin/Debug/net10.0/decompiler.deps.json
+/home/everest/RiderProjects/decompiler/decompiler/bin/Debug/net10.0/decompiler.runtimeconfig.json
+/home/everest/RiderProjects/decompiler/decompiler/bin/Debug/net10.0/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/bin/Debug/net10.0/decompiler.pdb
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.GeneratedMSBuildEditorConfig.editorconfig
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.AssemblyInfoInputs.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.AssemblyInfo.cs
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.csproj.CoreCompileInputs.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/refint/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.pdb
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/decompiler.genruntimeconfig.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Debug/net10.0/ref/decompiler.dll

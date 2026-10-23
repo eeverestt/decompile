@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+p90W0e0Eo4=",
+  "success": true,
+  "projectFilePath": "/home/everest/RiderProjects/decompiler/decompiler/decompiler.csproj",
+  "expectedPackageFiles": [
+    "/home/everest/.nuget/packages/microsoft.net.illink.tasks/10.0.12/microsoft.net.illink.tasks.10.0.12.nupkg.sha512",
+    "/home/everest/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/10.0.12/microsoft.netcore.app.runtime.linux-x64.10.0.12.nupkg.sha512",
+    "/home/everest/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/10.0.12/microsoft.aspnetcore.app.runtime.linux-x64.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

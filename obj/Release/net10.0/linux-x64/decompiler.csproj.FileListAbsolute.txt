@@ -1,0 +1,14 @@
+/home/everest/RiderProjects/decompiler/decompiler/bin/Release/net10.0/linux-x64/decompiler
+/home/everest/RiderProjects/decompiler/decompiler/bin/Release/net10.0/linux-x64/decompiler.deps.json
+/home/everest/RiderProjects/decompiler/decompiler/bin/Release/net10.0/linux-x64/decompiler.runtimeconfig.json
+/home/everest/RiderProjects/decompiler/decompiler/bin/Release/net10.0/linux-x64/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/bin/Release/net10.0/linux-x64/decompiler.pdb
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.GeneratedMSBuildEditorConfig.editorconfig
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.AssemblyInfoInputs.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.AssemblyInfo.cs
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.csproj.CoreCompileInputs.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/refint/decompiler.dll
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.pdb
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/decompiler.genruntimeconfig.cache
+/home/everest/RiderProjects/decompiler/decompiler/obj/Release/net10.0/linux-x64/ref/decompiler.dll
