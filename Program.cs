@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.IO.Compression;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -164,7 +164,8 @@ class Program
             mappingsFile,
             fromNamespace, toNamespace,
             classpathJar,
-            "--fixPackageAccess");
+            "--fixPackageAccess",
+            "--ignoreConflicts");
     }
 
     static bool IsLegacyVersion(string mcVersion)
