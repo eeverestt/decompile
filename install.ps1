@@ -81,7 +81,10 @@ if (-not (Test-Command "dotnet")) {
 Write-Ok ".NET SDK $(& dotnet --version)"
 
 if (Test-Command "java") {
-    $javaVersion = (& java -version 2>&1 | Select-Object -First 1) -replace '.*"([^"]+)".*', '$1'
+    $previousEAP = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $javaVersion = (& java -version 2>&1 | Select-Object -First 1) -replace '.*version "(.*?)".*','$1'
+    $ErrorActionPreference = $previousEAP
     Write-Ok "Java $javaVersion"
 } else {
     Write-Warn "java not found on PATH - decompile needs a JRE at runtime"
