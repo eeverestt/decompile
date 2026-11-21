@@ -81,11 +81,18 @@ if (-not (Test-Command "dotnet")) {
 Write-Ok ".NET SDK $(& dotnet --version)"
 
 if (Test-Command "java") {
-    $previousEAP = $ErrorActionPreference
-    $ErrorActionPreference = 'Continue'
-    $javaVersion = (& java -version 2>&1 | Select-Object -First 1) -replace '.*version "(.*?)".*','$1'
-    $ErrorActionPreference = $previousEAP
-    Write-Ok "Java $javaVersion"
+    $javaOutput = & java -version 2>&1
+
+    $javaVersion = $javaOutput |
+        ForEach-Object { $_.ToString() } |
+        Where-Object { $_ -match 'version "' } |
+        Select-Object -First 1
+
+    if ($javaVersion -match 'version "([^"]+)"') {
+        Write-Ok "Java $($Matches[1])"
+    } else {
+        Write-Warn "Java found, but its version could not be determined"
+    }
 } else {
     Write-Warn "java not found on PATH - decompile needs a JRE at runtime"
     Write-Warn "Install from https://adoptium.net/"
