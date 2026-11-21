@@ -81,18 +81,35 @@ if (-not (Test-Command "dotnet")) {
 Write-Ok ".NET SDK $(& dotnet --version)"
 
 if (Test-Command "java") {
-    $javaOutput = & java -version 2>&1
+    $javaPath = (Get-Command java).Source
 
-    $javaVersion = $javaOutput |
-        ForEach-Object { $_.ToString() } |
-        Where-Object { $_ -match 'version "' } |
-        Select-Object -First 1
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = $javaPath
+    $psi.Arguments = "-version"
+    $psi.UseShellExecute = $false
+    $psi.RedirectStandardError = $true
+    $psi.RedirectStandardOutput = $true
+    $psi.CreateNoWindow = $true
 
-    if ($javaVersion -match 'version "([^"]+)"') {
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $psi
+
+    [void]$process.Start()
+
+    $stderr = $process.StandardError.ReadToEnd()
+    $stdout = $process.StandardOutput.ReadToEnd()
+
+    $process.WaitForExit()
+
+    $javaOutput = "$stderr`n$stdout"
+
+    if ($javaOutput -match 'version "([^"]+)"') {
         Write-Ok "Java $($Matches[1])"
     } else {
         Write-Warn "Java found, but its version could not be determined"
     }
+
+    $process.Dispose()
 } else {
     Write-Warn "java not found on PATH - decompile needs a JRE at runtime"
     Write-Warn "Install from https://adoptium.net/"
