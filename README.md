@@ -16,7 +16,7 @@ Before installing, make sure you have the following installed and available on y
 Open **PowerShell** and run:
 
 ```powershell
-irm https://githubusercontent.com | iex
+irm https://raw.githubusercontent.com/eeverestt/decompile/refs/heads/main/install.ps1 | iex
 ```
 
 This downloads the latest source from `main`, compiles a self-contained `decompile.exe` into `%LOCALAPPDATA%\Programs\decompile`, and adds it to your user `PATH`.
